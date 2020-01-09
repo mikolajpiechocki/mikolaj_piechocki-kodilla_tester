@@ -5,21 +5,23 @@ public class FirstClass {
         notebook.checkPrice();
         notebook.checkWeight1();
         notebook.checkYear();
-        /*notebook.checkYearPrice();*/
+        notebook.checkYearPrice();
+        String notebookWeight = notebook.getWeight();
+        System.out.println(notebookWeight);
 
         Notebook heavyNotebook = new Notebook("2000g", 1500, 2000, 2010);
         System.out.println(heavyNotebook.weight + " " + heavyNotebook.price + " " + heavyNotebook.year);
         heavyNotebook.checkPrice();
         heavyNotebook.checkWeight1();
         heavyNotebook.checkYear();
-        /*heavyNotebook.checkYearPrice();*/
+        heavyNotebook.checkYearPrice();
 
         Notebook oldNotebook = new Notebook("1600g", 500, 1600, 2015);
         System.out.println(oldNotebook.weight + " " + oldNotebook.price + " " + oldNotebook.year);
         oldNotebook.checkPrice();
         oldNotebook.checkWeight1();
         oldNotebook.checkYear();
-        /*oldNotebook.checkYearPrice();*/
+        oldNotebook.checkYearPrice();
 
         if (1 > 2) {
             System.out.println("Niesamowite! Jeden jest większe niż dwa!!!");
@@ -27,4 +29,5 @@ public class FirstClass {
             System.out.println("Wszystko po staremu, jeden jest mniejsze niż dwa.");
         }
     }
+
 }
