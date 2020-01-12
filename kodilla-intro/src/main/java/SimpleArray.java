@@ -11,6 +11,8 @@ public class SimpleArray {
 
         String book = books [2];
         System.out.println(book);
+        int numberOfElements = books.length;
+        System.out.println("Moja Tablica zawiera ");System.out.println(numberOfElements);System.out.println(" elementów");
     }
 
 }
