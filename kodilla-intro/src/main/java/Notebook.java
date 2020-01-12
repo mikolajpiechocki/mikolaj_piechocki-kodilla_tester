@@ -23,9 +23,11 @@ public class Notebook {
             System.out.println("This notebook is expensive.");
         }
     }
+
     public String getWeight() {
         return this.weight;
     }
+
     public void checkWeight1() {
         if (this.weight1 < 800) {
             System.out.println("This device is light.");
@@ -63,18 +65,19 @@ public class Notebook {
             } else {
                 System.out.println("This notebook isn`t young but very expensive.");
             }
-         if (this.price < 600) {
-                System.out.println("This notebook is very very cheap and very young.");
-            } else if (this.price > 600 && this.price < 1000) {
-                System.out.println("This notebook is cheap and very young.");
-            } else {
-                System.out.println("This notebook is expensive but very young.");
+        }
+        else {
+                if (this.price < 600) {
+                    System.out.println("This notebook is very very cheap and very young.");
+                } else if (this.price > 600 && this.price < 1000) {
+                    System.out.println("This notebook is cheap and very young.");
+                } else {
+                    System.out.println("This notebook is expensive but very young.");
+                }
             }
         }
     }
 
-
-}
 
 
 
