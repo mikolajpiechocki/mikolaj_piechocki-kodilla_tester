@@ -7,12 +7,9 @@ public class LeapYear {
         LeapYear year = new LeapYear(2004);
         System.out.println(year.isLeap2());
     }
-
     public LeapYear(int year) {
         this.year = year;
-
     }
-
    /*     public Boolean isLeap() {
             if (this.year % 4 == 0) {
                 if (this.year % 100==0) {
@@ -34,17 +31,10 @@ public class LeapYear {
             }
             }
         }  */
-
-
     // && - and - i
 // || - or - albo
 // % modulo zwraca reszte z dzielenia
     public Boolean isLeap2() {
         return ((this.year % 4 == 0) || (this.year % 100 == 0)) || (this.year % 400 == 0);
-
-
         }
-
-
     }
-
