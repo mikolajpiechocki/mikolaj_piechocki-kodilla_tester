@@ -3,8 +3,8 @@ public class LeapYear {
     int year;
 
     public static void main(String[] args) {
-        String question = "Czy dany rok jest przestępny?";//czemu ta linika nie działa?
-        LeapYear year = new LeapYear(2004);
+        System.out.println("Czy dany rok jest przestępny?");//czemu ta linika nie działa?
+        LeapYear year = new LeapYear(2003);
         System.out.println(year.isLeap2());
     }
     public LeapYear(int year) {
