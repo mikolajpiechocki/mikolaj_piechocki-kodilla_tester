@@ -1,6 +1,8 @@
 package com.kodilla.abstracts;
 
 public class Person {
+    // private int wheels;
+    //    private int seats;
     private Person firstName;
 
     public Person getFirstName() {
@@ -8,7 +10,7 @@ public class Person {
     }
     private int age;
 
-    public int Person (int age) {
+    public int Person (int age,int job) {
         return age;
     }
     private int job;
