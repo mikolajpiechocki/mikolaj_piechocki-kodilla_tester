@@ -9,6 +9,7 @@ public class FirstClass {
         String notebookWeight = notebook.getWeight();
         System.out.println(notebookWeight);
 
+
         Notebook heavyNotebook = new Notebook("2000g", 1500, 2000, 2010);
         System.out.println(heavyNotebook.weight + " " + heavyNotebook.price + " " + heavyNotebook.year);
         heavyNotebook.checkPrice();
