@@ -34,9 +34,7 @@ import org.w3c.dom.ls.LSOutput;
             return sum/this.transaction.length;
     }*/
     // Nie wiem jak dalej to zsumować ( trochę się pogubiłem z całością) stan bankomatu
-
 public class CashMachine {
-
     private int[] transactions;
     private int size;
 
@@ -44,7 +42,6 @@ public class CashMachine {
         this.size = 0;
         this.transactions = new int[0];
     }
-
     public void add(int transaction) {
         this.size++;
         int[] newTab = new int[this.size];
@@ -52,7 +49,6 @@ public class CashMachine {
         newTab[this.size - 1] = transaction;
         this.transactions = newTab;
     }
-
     public int getBalance() {
         if (this.transactions.length == 0) {
             return 0;
@@ -63,7 +59,6 @@ public class CashMachine {
         }
         return balance;
     }
-
     public int getWithdraw() {
         if (this.transactions.length == 0) {
             return 0;
@@ -72,13 +67,11 @@ public class CashMachine {
         for (int i = 0; i < this.transactions.length; i++) {
             if (this.transactions[i] < 0) {
                 withdraw -= this.transactions[i];
-
                 System.out.println("Wartosc po odejmowaniu " + withdraw);
             }
         }
         return withdraw;
     }
-
     public int getCountOfWithdraws() {
         int count = 0;
         for (int i = 0; i < this.transactions.length; i++) {
@@ -88,7 +81,6 @@ public class CashMachine {
         }
         return count;
     }
-
     public int getPayment() {
         if (this.transactions.length == 0) {
             return 0;
@@ -101,7 +93,6 @@ public class CashMachine {
         }
         return payment;
     }
-
     public int getCountOfPayments() {
         int count = 0;
         for (int i = 0; i < this.transactions.length; i++) {
