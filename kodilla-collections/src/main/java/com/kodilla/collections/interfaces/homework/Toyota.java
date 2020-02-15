@@ -6,12 +6,12 @@ public class Toyota implements Car {
             this.speed = speed;
         }
         @Override
-        public void increaseSpeed() {
-            speed=+70;
+        public int increaseSpeed() {
+            return +70;
         }
         @Override
-        public void decreaseSpeed() {
-            speed=-45;
+        public int decreaseSpeed() {
+            return -45;
         }
         @Override
         public int getSpeed() {
