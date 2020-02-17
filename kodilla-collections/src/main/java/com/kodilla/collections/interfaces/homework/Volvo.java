@@ -1,20 +1,23 @@
 package com.kodilla.collections.interfaces.homework;
 
+import java.util.Random;
+
 public class Volvo implements Car {
-    private int speed;
-    public Volvo (int speed){
+    private double speed;
+    public Volvo (double speed){
         this.speed = speed;
     }
     @Override
-        public int increaseSpeed() {
-        return 50;
+        public double increaseSpeed() {
+        Random random = new Random();
+        return random.nextDouble() + 1;
     }
     @Override
     public int decreaseSpeed() {
         return -45;
     }
     @Override
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 }

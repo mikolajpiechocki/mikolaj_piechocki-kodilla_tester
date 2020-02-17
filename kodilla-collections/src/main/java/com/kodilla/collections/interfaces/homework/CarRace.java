@@ -25,7 +25,7 @@ public class CarRace {
  }
     }
 
-    private static int doRace(Car car) {
+    private static double doRace(Car car) {
         return car.getSpeed() + car.increaseSpeed() * 3 + car.decreaseSpeed() * 2;
     }
 
