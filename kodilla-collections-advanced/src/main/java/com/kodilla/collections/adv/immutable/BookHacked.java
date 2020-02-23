@@ -1,4 +1,4 @@
-package com.kodilla.collections.adv.immutable;
+/*package com.kodilla.collections.adv.immutable;
 
 class BookHacked extends Book {
         private String realTitle;
@@ -12,4 +12,4 @@ class BookHacked extends Book {
         public String getTitle() {
         return realTitle;
         }
-}
+}*/
