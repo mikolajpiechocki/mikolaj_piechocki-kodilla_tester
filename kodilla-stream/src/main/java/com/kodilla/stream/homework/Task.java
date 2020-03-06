@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Task {
-    private static String name1;
+    private String name1;
     private LocalDate opened;
     private LocalDate deadline;
 
@@ -14,7 +14,7 @@ public class Task {
         this.deadline = deadline;
     }
 
-    public static String getName() {
+    public String getName() {
         return name1;
     }
 
