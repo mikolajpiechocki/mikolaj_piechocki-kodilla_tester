@@ -6,11 +6,11 @@ public class RunOperatingSystem {
         opratingSystem.turnOn();
         opratingSystem.turnOff();
 
-        OperatingSystemWersion2 operatingSystemWersion2 = new OperatingSystemWersion2();
+        OperatingSystemVersion2 operatingSystemVersion2 = new OperatingSystemVersion2();
         opratingSystem.turnOn();
         opratingSystem.turnOff();
 
-        OperatingSystemWersion3 operatingSystemWersion3 = new OperatingSystemWersion3();
+        OperatingSystemVersion3 operatingSystemVersion3 = new OperatingSystemVersion3();
         opratingSystem.turnOn();
         opratingSystem.turnOff();
 
