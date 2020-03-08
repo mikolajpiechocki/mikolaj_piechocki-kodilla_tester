@@ -15,14 +15,5 @@ public class TaskManager {
                 .map(Task::getName)
                 .collect(Collectors.toList());
         System.out.println(tasks);
-            System.out.println(taskRepository.getTasks().get(0).getName());
-            System.out.println(taskRepository.getTasks().get(1).getName());
-            System.out.println(taskRepository.getTasks().get(2).getName());
-            System.out.println(taskRepository.getTasks().get(3).getName());
-            System.out.println(taskRepository.getTasks().get(4).getName());
     }
-
-     //  public String getName(Task task){
-     //   return Task.getName();
-     //   }
-    }
+ }
